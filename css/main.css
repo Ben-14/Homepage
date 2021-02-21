@@ -8,19 +8,15 @@ body{
   overflow-y: hidden;
   align-items: center;
   background-color: #fff;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 h1{
   font-size: 90px;
-  text-align: center;
 }
 h2{
   font-size: 40px;
-  text-align: center;
 }
 h3{
   font-size:20px;
-  text-align: center;
   font-weight: 300;
 }
 h4{
@@ -29,6 +25,7 @@ h4{
 }
 p{
   font-size: 30px;
+  line-height: 1.7rem;
 }
 a{
 }
@@ -38,38 +35,35 @@ a{
   -ms-flexwrap:wrap;
 }
 .display-1 {
-  font-family: 'DM Sans', sans-serif;
   font-size: 3.25rem;
 }
 .display-2{
-  font-family: 'DM Sans', sans-serif;
   font-size: 2.125rem;
+  font-weight: 900;
 }
 .display-3{
-  font-family: 'DM Sans', sans-serif;
   font-size: 1.875rem;
-  font-weight: 300;
+  font-weight: 700;
 }
 .display-4 {
-  font-family: 'DM Sans', sans-serif;
   font-size: 0.875rem;
 }
 .display-5 {
-  font-family: 'DM Sans', sans-serif;
   font-size: 1.2rem;
 }
 .display-6 {
-  font-family: 'DM Sans', sans-serif;
   font-size: 1.125rem;
 }
 .display-7{
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1.0625rem;
+  font-size: 1.2925rem;
 }
+
+
+
 .mbr-section-btn {
   margin-left: -.25rem;
   margin-right: -.25rem;
-  font-size: 0;
+  font-size: 10px;
 }
 .btn {
   padding: 0.85rem 2rem;
@@ -91,6 +85,7 @@ a{
 }
 .mbr-section-btn a.btn:not(.btn-form) {
   border-radius: 10px;
+
 }
 .media-container-row {
   display: -ms-flexbox;
@@ -113,6 +108,23 @@ a{
 }
 .card{
   border: none;
+}
+.mbr-section-title {
+    font-style: normal;
+    line-height: 1.2;
+}
+.mbr-figure {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    -webkit-align-self: center;
+    align-self: center;
+}
+.mbr-figure img, .card-img img {
+    width: 100%;
+}
+.mbr-figure img, .mbr-figure iframe {
+    display: block;
+    width: 100%;
 }
 
 #header-01{
@@ -139,12 +151,275 @@ a{
 
 }
 
+/*
+  #header-04 {
+    padding-top: 105px;
+    background-color: #ffffff;
+  }
+  #header-04 .content-block {
+    max-width: 700px;
+    padding: 4rem 3rem;
+  }
+  #header-04 .col {
+      padding: 0;
+      display: flex;
+      position: relative;
+      min-height: 400px;
+      justify-content: flex-end;
+  }
+  #header-04 .overlay-wrapper {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 50%;
+    transition-delay: 0.3s;
+    top: 0;
+    z-index: 4;
+    background: #000000;
+  }
+  #header-04 .overlay {
+    position: absolute;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    right: 0%;
+    background: #000000;
+    z-index: 2;
+    opacity: 1;
+  }
+  #header-04 .img-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.3s;
+    transition-delay: 0s;
+    background-image: url(https://mobirise.com/extensions/photom4/assets/images/048.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 3;
+  }
+  #header-04 .box-content {
+    width: 50%;
+    height: 100%;
+    transition: all 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #000000;
+  }
+  #header-04 .content1 {
+    z-index: 5;
+    max-width: 450px;
+    position: relative;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+    padding: 4rem 3rem;
+  }
+  #header-04 col:hover .overlay{
+    opacity: 1;
+    width: 100%;
+
+  }
+  #header-04 .col:hover .img-content{
+    opacity: 1;
+    left: 100%;
+  }
+  #header-04 .col:hover .box-content{
+    background: rgba(76, 175, 80, 0.3);
+  }
+  #header-04 .col:hover .content-1{
+  }
+  #header-04 .box-title2 ,#header-04 .box-text2{
+    transition: all 0.3s;
+    transition-delay: 0s;
+    color: #ffffff;
+  }
+
+  #header-05{
+    padding-top: 0px;
+    padding-bottom: 100px;
+    background-color: #ffffff;
+  }
+  #header-05 .col {
+    padding: 0;
+    display: flex;
+    position: relative;
+    min-height: 400px;
+    justify-content: flex-end;
+  }
+  #header-05 .block1{
+    margin: 10px 0px;
+    border-radius: 60px;
+    background-image: url(https://mobirise.com/extensions/photom4/assets/images/048.jpg);
+  }
+  #header-05 .block1-over {
+    position: absolute;
+    transition: all 0.6s;
+    width: 100%;
+    background-color: #cc2952;
+    opactiy: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 60px;
+  }
+  #header-05 .content-block {
+    max-width: 350px;
+    padding: 4rem 3rem;
+    z-index: 5;
+    position: relative;
+  }
+  #header-05 .block1-subtitle {
+    color: #ffffff;
+  }
+  #header-05 .block1-text, #header-05 .mbr-section-btn {
+      color: #ffffff;
+  }
+  #header-05 .overlay-wrapper {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 50%;
+    transition-delay: 0.3s;
+    top: 0;
+    z-index: 4;
+  }
+  #header-05 .overlay {
+    position: absolute;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    right: 0%;
+    background: #29a7c6;
+    z-index: 2;
+    opacity: 1;
+  }
+  #header-05 .img-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.3s;
+    transition-delay: 0s;
+    background-image: url(https://mobirise.com/extensions/photom4/assets/images/background33.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 3;
+  }
+  #header-05 .box-content {
+    width: 50%;
+    height: 100%;
+    transition: all 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #29a7c6;
+  }
+  #header-05 .content1 {
+    z-index: 5;
+    max-width: 450px;
+    position: relative;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+    padding: 4rem 3rem;
+  }
+  #header-05 .box-title2, #header-05 .box-text2 {
+    transition: all 0.3s;
+    transition-delay: 0s;
+    color: #ffffff;
+  }
+  #header-05 .block2 {
+    border-radius: 60px;
+    margin: 10px 0px;
+    background-image: url(https://mobirise.com/extensions/photom4/assets/images/029.jpg);
+  }
+  #header-05 .block2-over {
+    position: absolute;
+    transition: all 0.6s;
+    width: 100%;
+    background-color: #ed6031;
+    opactiy: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 60px;
+  }
+  #header-05 .block2-subtitle {
+    color: #ffffff;
+  }
+  #header-05 .block2-text, #header-05 .mbr-section-btn {
+    color: #ffffff;
+  }
+  #header-05 .block1:hover .block1-over{
+    background: rgba(76, 175, 80, 0.3);
+  }
+  #header-05 .block2:hover .block2-over{
+    background: rgba(76, 175, 80, 0.3);
+  }
+
+  #header-06 h2 {
+    line-height: 3rem;
+    padding-left: 0;
+  }
+  #header-06 .pb-5 {
+    padding-bottom: 1rem !important;
+  }
+  #header-06 .align-left {
+    padding: 0;
+  }
+  #header-06 h3 {
+    padding-left: 15px;
+  }
+  #header-06 {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #1a1a1a;
+    font-family: 'Barlow', sans-serif;
+    color: #ffffff;
+  }
+  #header-06 h2 {
+    padding-left: 4rem;
+  }
+  #header-06 h3 {
+    line-height: 1;
+    padding-left: 3.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    font-family: 'Barlow', sans-serif;
+  }
+  #header-06 .col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+*/
+
 #header-03{
   padding-top: 105px;
   padding-bottom: 75px;
+  font-family: 'Barlow', sans-serif;
 }
 #header-03 .container{
-  background-color: #feadff;
+  background-color: #c2ecff;
   border-radius: 50px;
   padding: 152px 32px;
 }
@@ -161,8 +436,8 @@ a{
   margin: 0.8rem 0.8rem;
 }
 #header-03 .nav-tabs .nav-item .btn:before{
-  background-color: #0000;
-  color: #fff;
+  background-color: #fc643f;
+  color: #000000;
 }
 #header-03 .nav-tabs .nav-item .btn:active{
   background-color: #fc643f;
@@ -174,73 +449,141 @@ a{
   border-bottom-right-radius: 0 !important;
 }
 #header-03 .nav-tabs .nav-item .btn:hover{
-  color:#fc643f;
+  color:#ffffff;
+  background-color: #fc643f;
 }
 #header-03 .card{
   background-color: #0000;
   border: none;
   border-radius: 50px;
   transition: all 0.3s;
-  padding: 1rem 4.5rem !important;
+  padding: 1rem 1.5rem !important;
   justify-content: center;
+  text-align: center;
 }
 #header-03 .card:hover{
   box-shadow: 0 10px 55px 5px rgb(25 74 195 / 35%);
+  background-image: linear-gradient(#2F80ED, #56CCF2);
 }
 #header-03 .card .card-img img{
   height: 100px;
-  padding-left: 1.5rem;
-  margin-top: 0rem;
-  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
-#header-03 .card .card-box .btn{
+#header-03 .card .card-img .btn{
   margin-top: 2rem;
-  margin-bottom: 0rem;
+  margin-bottom: 1rem;
 }
 
 
-@media all and (max-width: 760px){
+
+#header-07{
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background-color: #f4f8fa;
+  font-family: 'Montserrat', sans-serif;
+}
+#header-07 .text-content {
+    padding-right: 1.5rem;
+}
+#header-07 .mbr-text {
+    color: #8d97ad;
+}
+
+#header-07 .counter-container {
+    padding-top: 1rem;
+}
+#header-07 .counter-container ul {
+    margin-bottom: 0;
+    padding-left: 1.5rem;
+}
+#header-07 .counter-container ul li {
+    margin-bottom: 1rem;
+    list-style: none;
+}
+#header-07 .mbr-figure img {
+    border-radius: .25rem;
+}
+#header-07 .himg{
+}
+
+
+
+@media all and (max-width: 992px){
+
+  .display-2{
+    font-size: 1.025rem;
+  }
+  .display-6 {
+    font-size: 0.525rem;
+  }
+  .display-7{
+    font-size: 0.65rem;
+  }
   #header-03 .container{
     padding: 72px 12px;
   }
   #header-03 .card{
     padding: 0.75rem 2.5rem !important;
   }
-  display-1 {
-    font-family: 'DM Sans', sans-serif;
+  #header-07 .mbr-figure img {
+    width: 80%;
+    height: auto;
+    float: right;
+  }
+}
+
+@media all and (max-width: 578px){
+  .display-1 {
     font-size: 2.25rem;
   }
   .display-2{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.525rem;
+    font-size: 1.225rem;
   }
   .display-3{
-    font-family: 'DM Sans', sans-serif;
     font-size: 0.975rem;
     font-weight: 300;
   }
   .display-4 {
-    font-family: 'DM Sans', sans-serif;
     font-size: 0.575rem;
   }
   .display-5 {
-    font-family: 'DM Sans', sans-serif;
     font-size: 0.9rem;
   }
   .display-6 {
-    font-family: 'DM Sans', sans-serif;
     font-size: 0.425rem;
   }
   .display-7{
-    font-family: 'DM Sans', sans-serif;
-    font-size: .25rem;
+    font-size: 0.55rem;
+  }
+  p{
+    line-height: 1rem;
+  }
+  #header-07 .text-content{
+    width: 60%;
+  }
+  #header-07 .mbr-figure{
+    width: 40%;
+  }
+  #header-07 .mbr-figure img {
+    width: 90%;
+    height: auto;
+    float: right;
   }
 }
-@media all and (min-width: 984x){
+
+@media all and (max-width: 768px){
+  .display-2{
+    font-size: 1.15rem;
+  }
   #header-03 .card{
-    padding: 1rem 4.5rem !important;
+    padding: 0.5rem 3.5rem !important;
   }
 }
+
+
+
 *,*:before,*:after {
   box-sizing: border-box;
 }
