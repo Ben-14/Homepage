@@ -174,7 +174,7 @@ a{
 #header-01 .d1 {
   position: absolute;
   background-image: url(bussit.jpg);
-  background-size: 270px 150px;
+  background-size: 1347px 960px;
 
   height: 30vh;
   width: 25vw;
@@ -192,7 +192,7 @@ a{
 #header-01 .d2 {
   position: absolute;
   background-image: url(bussit.jpg);
-  background-size: 270px 150px;
+  background-size: 1347px 960px;
 
   height: 90vh;
   width: 25vw;
@@ -210,7 +210,7 @@ a{
 #header-01 .d3 {
   position: absolute;
   background-image: url(bussit.jpg);
-  background-size: 270px 150px;
+  background-size: 1347px 960px;
   overflow: hidden;
 
   height: 100vh;
@@ -231,7 +231,7 @@ a{
   position: absolute;
   overflow: hidden;
   background-image: url(bussit.jpg);
-  background-size: 270px 150px;
+  background-size: 1347px 960px;
 
   height: 80vh;
   width: 30vw;
