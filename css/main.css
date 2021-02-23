@@ -257,28 +257,28 @@ a{
   0% {
   }
   50% {
-    background-position: Calc(0vw - 40px) 50%;
+    background-position: Calc(0vw - 140px) 50%;
   }
 }
 @keyframes dd2 {
   0% {
   }
   50% {
-    background-position: Calc(-10vw - 40px) 50%;
+    background-position: Calc(-10vw - 140px) 50%;
   }
 }
 @keyframes dd3 {
   0% {
   }
   50% {
-    background-position: Calc(-35vw - 40px) 50%;
+    background-position: Calc(-35vw - 140px) 50%;
   }
 }
 @keyframes dd4 {
   0% {
   }
   50% {
-    background-position: Calc(-70vw - 40px) 50%;
+    background-position: Calc(-70vw - 140px) 50%;
   }
 }
 
