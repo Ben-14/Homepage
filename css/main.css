@@ -140,19 +140,19 @@ a{
 #header-01 .title-content {
   font-size: 5rem;
   font-family: 'Nunito', sans-serif;
-  color: #ffe138;
+  color: #000000;
   padding: 3.5rem 4.5rem;
 }
 #header-01 .title-content-2 {
   font-size: 4.5rem;
   font-family: 'Nunito', sans-serif;
-  color: #ffffff;
+  color: #000000;
   padding: 3.5rem 4.5rem;
   margin-top: 15rem;
 }
 #header-01 .btn{
-  color:#ffffff;
-  background: rgba(0, 124, 249, 0.2);
+  color:#000000;
+  background: rgba(0, 124, 249, 0.4);
   border-color: #ffffff;
   font-family: 'Barlow', sans-serif;
   border-top-left-radius: 10px;
