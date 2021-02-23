@@ -151,9 +151,9 @@ a{
   margin-top: 15rem;
 }
 #header-01 .btn{
-  color:#000000;
+  color: #ffffff;
   background: rgba(0, 124, 249, 0.4);
-  border-color: #ffffff;
+  border-color: #000000;
   font-family: 'Barlow', sans-serif;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -161,6 +161,7 @@ a{
 }
 #header-01 .btn:hover{
   background-color: #0069ba;
+  border-color: #ffffff ;
 }
 #hedaer-01 .home-section-btn a.btn:not(.btn-form) {
   border-radius: 10px;
