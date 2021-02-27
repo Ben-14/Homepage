@@ -302,38 +302,41 @@ a{
   font-family: 'Barlow', sans-serif;
 }
 #header-03 .container{
-  background-image: linear-gradient( #f2fcfe, #0076bf);
+  background-image: linear-gradient(#0076bf, #f2fcfe);
   border-radius: 50px;
   padding: 152px 32px;
 }
 #header-03 .nav-tabs{
-  border-bottom:none;
+  margin: auto;
+  border: none;
 }
 #header-03 .nav-tabs .nav-item{
+  margin: 0;
 }
 #header-03 .nav-tabs .nav-item .btn{
-  border-radius: 40px;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: transparent !important;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  position: relative;
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border-color: #fc643f !important;
-  padding: 0.8rem 1.0rem;
-  margin: 0.8rem 0.8rem;
-}
-#header-03 .nav-tabs .nav-item .btn:before{
-  background-color: #fc643f;
-  color: #000000;
+  border-radius: 40px;
+  z-index: 1;
 }
 #header-03 .nav-tabs .nav-item .btn:active{
-  background-color: #fc643f;
-  color: #fff;
-}
-#header-03 .nav-tabs .nav-item:first-child > .btn:after{
-  border-right: none !important;
-  border-top-right-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
+  color: #fff !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border-radius: 40px;
 }
 #header-03 .nav-tabs .nav-item .btn:hover{
-  color:#ffffff;
-  background-color: #fc643f;
+  cursor: pointer;
+  color: #fc643f !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 #header-03 .card{
   background-color: #0000;
@@ -569,6 +572,88 @@ a{
       width: 100%;
       z-index: -1;
   }
+
+  @media (min-width: 768px) {
+      #header-03 .nav-tabs .nav-item .btn {
+        margin: 0px !important;
+        border-color: transparent !important;
+      }
+      #header-03 .nav-tabs .nav-item .btn:after {
+        content: "";
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        margin: 0;
+        opacity: 1;
+        padding: 0;
+        background-color: transparent !important;
+        border: inherit;
+        border-color: #ff8a73;
+        border-radius: inherit;
+        -webkit-animation: none;
+        animation: none;
+        z-index: -1;
+      }
+      #header-03 .nav-tabs .nav-item .btn:before {
+        content: "";
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        background-color: transparent;
+        border-radius: inherit;
+        z-index: -1;
+        -webkit-transition: background-color 0.2s, -webkit-transform 0.3s;
+        transition: transform 0.3s, background-color 0.2s, -webkit-transform 0.3s;
+      }
+      #header-03 .nav-tabs .nav-item .btn.active:before {
+        background-color: #fc643f !important;
+      }
+    }
+
+  @media (max-width: 767px) {
+      #header-03 .nav-tabs .nav-item .btn {
+        border-color: #fc643f !important;
+      }
+    }
+
+  @media (max-width: 767px) {
+      #header-03 .nav-tabs .nav-item .btn.active {
+        background-color: #fc643f !important;
+      }
+    }
+
+  @media (min-width: 768px) {
+      #header-03 .nav-tabs .nav-item:first-child > .btn:after {
+        border-right: none !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+      #header-03 .nav-tabs .nav-item:last-child > .btn:after {
+        border-left: none !important;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+      }
+      #header-03 .nav-tabs .nav-item:first-child > .btn:before {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+      }
+      #header-03 .nav-tabs .nav-item:last-child > .btn:before {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+      #header-03 .nav-tabs .nav-item:first-child > .btn.active:before {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+      #header-03 .nav-tabs .nav-item:last-child > .btn.active:before {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
 
 /* navbar */
 .nav-item {
