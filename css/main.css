@@ -133,6 +133,9 @@ a{
     display: block;
     width: 100%;
 }
+
+
+
 #header-01 {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -616,7 +619,7 @@ a{
       margin-top: 0rem;
     }
     #header-01 .title-content-2 span{
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: 700;
       background: -webkit-linear-gradient(#000000, #001854);
       -webkit-background-clip: text;
