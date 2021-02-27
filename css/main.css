@@ -350,7 +350,7 @@ a{
 }
 #header-03 .card:hover{
   box-shadow: 0 10px 55px 5px rgb(25 74 195 / 35%);
-  background-image: linear-gradient(#2F80ED, #56CCF2);
+  background-image: linear-gradient(to bottom right,#ffffff, #1c92d2);
 }
 #header-03 .card .card-img img{
   height: 100px;
