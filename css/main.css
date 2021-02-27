@@ -155,11 +155,11 @@ a{
   padding: 0.5rem 0.5rem;
 }
 #header-01 .title-content {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'Lato', sans-serif;
   color: #000000;
   font-weight: 900;
-  padding: 2.5rem 2.5rem;
+  padding: 2.5rem 1.5rem;
 }
 #header-01 .title-content span{
 
@@ -190,8 +190,8 @@ a{
 #header-01 .home-section-btn {
   margin-left: -.25rem;
   margin-right: -.25rem;
+  padding-left: 2.5rem;
 }
-
 #header-01 .img-card {
   padding: 2.5rem 2.5rem;
 }
@@ -455,7 +455,7 @@ a{
     -webkit-text-fill-color: transparent;
   }
   #header-01 .title-content {
-    padding: 2.5rem 2.5rem;
+    padding: 1.5rem 1.5rem;
     font-size: 2rem;;
   }
   #header-01 .img-card {
@@ -470,7 +470,20 @@ a{
     width: 35%;
     float: right;
   }
+}
 
+@media (min-width:1218px) and (max-width: 1318px){
+  #header-01 .title-content {
+    padding: 1.5rem 1.5rem;
+    font-size: 2rem;;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1218px){
+  #header-01 .title-content {
+    padding: 1rem 1.5rem;
+    font-size: 2rem;;
+  }
 }
 
 @media all and (max-width: 600px){
@@ -739,6 +752,7 @@ a{
   width: 100%;
   z-index: -1;
 }
+
 
 /* navbar */
 .nav-item {
