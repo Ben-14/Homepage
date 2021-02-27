@@ -211,7 +211,7 @@ a{
   height: 30vh;
   width: 25vw;
 
-  background-position: -10vw 50%;
+  background-position: -15vw 50%;
 
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
   top: 50%;
@@ -229,7 +229,7 @@ a{
   height: 90vh;
   width: 25vw;
 
-  background-position: -20vw 50%;
+  background-position: -25vw 50%;
   left: 10vw;
 
   top: 50%;
@@ -249,7 +249,7 @@ a{
   width: 40vw;
   left: 25vw;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-  background-position: -45vw 50%;
+  background-position: -50vw 50%;
 
   top: 50%;
   transform: translateY(-50%);
@@ -268,7 +268,7 @@ a{
   height: 90vh;
   width: 30vw;
   left: 60vw;
-  background-position: -80vw 50%;
+  background-position: -85vw 50%;
 
   top: 50%;
   transform: translateY(-50%);
